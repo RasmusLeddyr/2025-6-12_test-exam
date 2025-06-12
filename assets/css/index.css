@@ -1,46 +1,126 @@
-/* LINK OTHER CSS FILES */
+/*-( LINK OTHER CSS FILES */
 @import url("navigation.css");
-/* LINK OTHER CSS FILES */
+/* LINK OTHER CSS FILES )-*/
 
-/* PAGE SETUP */
+/*-( PAGE SETUP */
 :root {
-  /*page design width*/
   --base-width: 1366;
-  --page-padding: calc((143 / var(--base-width)) * 100vw);
-  /*colours*/
-  --col_action: rgb(255, 127, 0);
-  --col_btn-txt: rgb(127, 127, 127);
+  --page-padding: calc((139 / var(--base-width)) * 100vw);
+
+  --col__txt_main: #ffffff;
+  --col__txt_title: #3d3d3d;
+  --col__txt_small: #737373;
+  --col__highlight: #ee9b00;
+  --col__back_1: #fbfbfb;
+  --col__back_2: #264653;
+  --col__back_3: #001219;
+  --col__back_4: #005f73;
 }
+/* PAGE SETUP )-*/
+
+/*-( TEXT */
 h1 {
-  --text-size: 64;
-  font-weight: var(--fw_bold);
+  --text-size: 56;
+  font-weight: 700;
 }
 h2 {
-  --text-size: 48;
-  font-weight: var(--fw_bold);
+  --text-size: 35;
+  font-weight: 700;
 }
-h3 {
+/* TEXT )-*/
+
+#hero,
+#palace,
+#aliquam,
+#gallery,
+#apply,
+#footer {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
+/*-( NAV */
+#nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 167px;
+}
+#nav .title {
+  display: flex;
+  align-items: center;
+  color: var(--col__txt_main);
   --text-size: 32;
-  font-weight: var(--fw_bold);
+  margin-right: auto;
+  font-family: "Noto Sans";
+  white-space: nowrap;
 }
-h4 {
-  --text-size: 24;
-  font-weight: var(--fw_bold);
+#nav .title img {
+  --width: 48;
+  margin-right: 14px;
 }
-.btn {
-  background-color: var(--col_action);
+#nav .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 55px;
+}
+#nav .list a {
+  text-decoration: none;
+  color: var(--col__txt_main);
+  font-weight: 600;
   padding: 0.5em;
   display: inline-block;
-  color: var(--col_btn-txt);
-  text-decoration: none;
-  font-weight: var(--fw_bold);
+  font-family: "Noto Sans";
 }
-/* PAGE SETUP */
+#nav .list a:hover {
+  background-color: var(--col__highlight);
+}
+/* NAV )-*/
 
-/* IMAGE GALLERY */
+/*-( HERO */
+#hero {
+  background-image: url("../img/hero_background.webp");
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  padding-top: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero::after {
+  content: "";
+  background-color: #435061;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+#hero * {
+  position: relative;
+  z-index: 2;
+}
+#hero h1 {
+  font-family: "Noto Sans";
+  color: var(--col__txt_main);
+  margin-bottom: 24px;
+}
+#hero p {
+  font-family: "Open Sans";
+  color: var(--col__txt_main);
+  --text-size: 18;
+  margin-bottom: 200px;
+}
+/* HERO )-*/
+
+/*-( IMAGE GALLERY */
 .img_gal {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* IMAGE GALLERY */
+/* IMAGE GALLERY )-*/
