@@ -21,11 +21,11 @@
 /*-( TEXT */
 h1 {
   --text-size: 56;
-  font-weight: 700;
+  font-weight: bold;
 }
 h2 {
   --text-size: 35;
-  font-weight: 700;
+  font-weight: bold;
 }
 /* TEXT )-*/
 
@@ -54,6 +54,7 @@ h2 {
   margin-right: auto;
   font-family: "Noto Sans";
   white-space: nowrap;
+  font-weight: bold;
 }
 #nav .title img {
   --width: 48;
@@ -113,9 +114,41 @@ h2 {
   font-family: "Open Sans";
   color: var(--col__txt_main);
   --text-size: 18;
+  font-weight: bold;
   margin-bottom: 200px;
 }
 /* HERO )-*/
+
+/*-( PALACE PAGE */
+#palace {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 91px;
+  padding-bottom: 90px;
+  background-color: var(--col__back_1);
+}
+#palace article h2 {
+  --width: 501;
+  margin-bottom: 33px;
+  color: var(--col__txt_title);
+  font-family: "Noto Sans";
+}
+#palace article p {
+  --width: 435;
+  color: var(--col__txt_small);
+  font-family: "Open Sans";
+}
+#palace article p:nth-of-type(1) {
+  font-weight: bold;
+}
+#palace article p:nth-of-type(-n + 2) {
+  margin-bottom: 1.5em;
+}
+#palace img {
+  --width: 538;
+}
+/* PALACE PAGE )-/*
 
 /*-( IMAGE GALLERY */
 .img_gal {
