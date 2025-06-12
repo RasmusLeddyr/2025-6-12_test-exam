@@ -129,22 +129,52 @@
         <img class="img_main" src="" alt="Selekteret billede." />
         <ul class="img_list">
           <li>
-            <img class="img_small" src="assets/img/fruit_shop.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/fruit_shop.webp"
+              alt=""
+            />
           </li>
           <li>
-            <img class="img_small" src="assets/img/palace.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/palace.webp"
+              alt=""
+            />
           </li>
           <li>
-            <img class="img_small" src="assets/img/sunflower.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/sunflower.webp"
+              alt=""
+            />
           </li>
           <li>
-            <img class="img_small" src="assets/img/mountain_road.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/mountain_road.webp"
+              alt=""
+            />
           </li>
           <li>
-            <img class="img_small" src="assets/img/daisy_flowers.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/daisy_flowers.webp"
+              alt=""
+            />
           </li>
           <li>
-            <img class="img_small" src="assets/img/samurai_art.webp" alt="" />
+            <img
+              class="img_small"
+              draggable="false"
+              src="assets/img/samurai_art.webp"
+              alt=""
+            />
           </li>
         </ul>
       </div>
@@ -155,38 +185,42 @@
     <section id="apply">
       <h2>Donec lacinia condimentum</h2>
       <p>Phasellus imperdiet augue</p>
-      <form class="form" method="get" autocomplete="on">
-        <input
-          class="input name"
-          required
-          minlength="2"
-          maxlength="32"
-          type="text"
-          placeholder="Navn"
-        />
-        <input
-          class="input birthday"
-          required
-          max="2007-05-07"
-          type="date"
-          placeholder="Fødselsdag"
-        />
-        <input
-          class="input email"
-          required
-          minlength="4"
-          maxlength="64"
-          type="email"
-          placeholder="E-mail"
-        />
-        <input
-          class="input school"
-          required
-          minlength="2"
-          maxlength="32"
-          type="text"
-          placeholder="Nuværende skole"
-        />
+      <form method="get" autocomplete="on">
+        <div class="inputs">
+          <input
+            class="input name"
+            required
+            minlength="2"
+            maxlength="32"
+            type="text"
+            placeholder="Navn"
+          />
+          <input
+            class="input birthday"
+            required
+            max="2007-05-07"
+            type="date"
+            placeholder="Fødselsdag"
+            onfocus="(this.type='date')"
+          />
+          <input
+            class="input email"
+            required
+            minlength="4"
+            maxlength="64"
+            type="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="input school"
+            required
+            minlength="2"
+            maxlength="32"
+            type="text"
+            placeholder="Nuværende skole"
+          />
+        </div>
+
         <textarea
           name="application"
           id=""
@@ -194,7 +228,7 @@
           rows="10"
           placeholder="Din ansøgning"
         ></textarea>
-        <input type="submit" value="Send" class="button" />
+        <input type="submit" value="Send" class="send" />
       </form>
     </section>
     <!-- APPLICATION -->

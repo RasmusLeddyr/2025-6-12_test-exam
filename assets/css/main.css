@@ -22,7 +22,9 @@ h6,
 p,
 div,
 a,
-button {
+button,
+input,
+textarea {
   --text-size: 16; /* The max text size, reached once window width is at --base-width */
   --text-shrink: 1.5; /* This number is divided by --text-size to decide a minimum size value */
   font-size: clamp(

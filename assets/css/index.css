@@ -15,6 +15,7 @@
   --col__back_2: #264653;
   --col__back_3: #001219;
   --col__back_4: #005f73;
+  --col__txt_form: #3e3e3e;
 }
 /* PAGE SETUP )-*/
 
@@ -156,7 +157,6 @@ h2 {
 #aliquam {
   background-color: var(--col__back_2);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 86px;
@@ -222,5 +222,101 @@ h2 {
 #gallery .img_small {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+}
+#gallery .img_small:hover {
+  outline: 2px solid var(--col__txt_main);
+}
+#gallery .img_small.selected {
+  outline: 4px solid var(--col__txt_main);
 }
 /* IMAGE GALLERY )-*/
+
+/*-( APPLICATION */
+#apply {
+  background-color: var(--col__back_3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 86px;
+}
+#apply h2 {
+  color: var(--col__txt_main);
+  margin-bottom: 28px;
+  font-family: "Noto Sans";
+}
+#apply p {
+  color: var(--col__txt_main);
+  margin-bottom: 64px;
+  font-weight: bold;
+  font-family: "Noto Sans";
+}
+#apply form {
+  width: 100%;
+  display: grid;
+  gap: 32px;
+  grid-template-areas:
+    "inputs text"
+    "send send";
+}
+#apply form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  grid-area: inputs;
+}
+#apply form .input {
+  height: 48px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 13px 16px;
+  font-family: "Noto Sans";
+  background-color: white;
+  outline: 2px solid var(--col__txt_form);
+  border: none;
+}
+#apply form .input::placeholder {
+  color: var(--col__txt_form);
+}
+#apply form textarea {
+  grid-area: text;
+  resize: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 16px;
+  font-family: "Noto Sans";
+  background-color: white;
+  outline: 2px solid var(--col__txt_form);
+  border: none;
+}
+#apply form textarea::placeholder {
+  color: var(--col__txt_form);
+}
+#apply form .send {
+  grid-area: send;
+  height: 48px;
+  background-color: var(--col__highlight);
+  border: none;
+  margin-bottom: 194px;
+  color: var(--col__txt_main);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 13px;
+  font-family: "Noto Sans";
+}
+/* APPLICATION )-*/
+
+/*
+
+
+Det hjalpt meget med den nye stol.
+Før kunne jeg overhovedt ikke koncentrere mig om CSS pågrund af smerterne.
+HTML og JS kunne jeg godt, men det er også lettere for mig end CSS.
+CSS kræver meget hjerne-kraft af mig, da jeg syntes det er svært at omdanne et billede til tekst i hovedet,
+der er det altså nemmere at programmere funktioner, da jeg lettere kan bruge kode til at forklare en handling, end til at forklare et visuelt design.
+Der er en kæmpe forskel på hvor hurtigt jeg har arbejdet takket være magien af en "god gamer-stol". X-D
+
+
+*/
