@@ -1,7 +1,3 @@
-/*-( LINK OTHER CSS FILES */
-@import url("navigation.css");
-/* LINK OTHER CSS FILES )-*/
-
 /*-( PAGE SETUP */
 :root {
   --base-width: 1366;
@@ -307,6 +303,41 @@ h2 {
   font-family: "Noto Sans";
 }
 /* APPLICATION )-*/
+
+/*-( FOOTER */
+#footer {
+  background-color: var(--col__back_4);
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 42px;
+}
+#footer .info {
+  color: var(--col__txt_main);
+  font-family: "Noto Sans";
+  margin-right: auto;
+}
+#footer .info :nth-child(n + 3) {
+  margin-top: 4px;
+}
+#footer .info .title {
+  --text-size: 32;
+  margin-bottom: 25px;
+}
+#footer .socials {
+  display: flex;
+  gap: 44px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#footer .socials a {
+  max-width: 20px;
+  max-height: 20px;
+}
+#footer .socials img {
+  height: 100%;
+}
+/* FOOTER )-*/
 
 /*
 
