@@ -147,8 +147,41 @@ h2 {
 }
 #palace img {
   --width: 538;
+  --width-shrink: 2;
+  height: 100%;
 }
-/* PALACE PAGE )-/*
+/* PALACE PAGE )-*/
+
+/*-( ALIQUAM ARTICLE */
+#aliquam {
+  background-color: var(--col__back_2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 86px;
+  padding-bottom: 36px;
+}
+#aliquam h2 {
+  color: var(--col__txt_main);
+  margin-bottom: 82px;
+  font-family: "Noto Sans";
+}
+#aliquam .text {
+  display: flex;
+  gap: 50px;
+}
+#aliquam .text div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#aliquam .text p {
+  color: var(--col__txt_main);
+  --text-size: 20;
+  font-family: "Open Sans";
+}
+/* ALIQUAM ARTICLE )-*/
 
 /*-( IMAGE GALLERY */
 .img_gal {
