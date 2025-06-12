@@ -1,0 +1,46 @@
+/* LINK OTHER CSS FILES */
+@import url("navigation.css");
+/* LINK OTHER CSS FILES */
+
+/* PAGE SETUP */
+:root {
+  /*page design width*/
+  --base-width: 1366;
+  --page-padding: calc((143 / var(--base-width)) * 100vw);
+  /*colours*/
+  --col_action: rgb(255, 127, 0);
+  --col_btn-txt: rgb(127, 127, 127);
+}
+h1 {
+  --text-size: 64;
+  font-weight: var(--fw_bold);
+}
+h2 {
+  --text-size: 48;
+  font-weight: var(--fw_bold);
+}
+h3 {
+  --text-size: 32;
+  font-weight: var(--fw_bold);
+}
+h4 {
+  --text-size: 24;
+  font-weight: var(--fw_bold);
+}
+.btn {
+  background-color: var(--col_action);
+  padding: 0.5em;
+  display: inline-block;
+  color: var(--col_btn-txt);
+  text-decoration: none;
+  font-weight: var(--fw_bold);
+}
+/* PAGE SETUP */
+
+/* IMAGE GALLERY */
+.img_gal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* IMAGE GALLERY */
