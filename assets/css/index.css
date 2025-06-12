@@ -184,9 +184,43 @@ h2 {
 /* ALIQUAM ARTICLE )-*/
 
 /*-( IMAGE GALLERY */
-.img_gal {
+#gallery {
+  background-color: var(--col__highlight);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 86px;
+  padding-bottom: 65px;
+  color: var(--col__txt_main);
+}
+#gallery h2 {
+  margin-bottom: 28px;
+  font-family: "Noto Sans";
+}
+#gallery p {
+  margin-bottom: 57px;
+  --width: 732;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+#gallery .img_gal {
+  display: flex;
+  gap: 16px;
+}
+#gallery .img_main {
+  --width: 536;
+  --width-shrink: 2;
+  object-fit: cover;
+}
+#gallery .img_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 30px;
+}
+#gallery .img_small {
+  width: 100%;
+  height: 100%;
 }
 /* IMAGE GALLERY )-*/
